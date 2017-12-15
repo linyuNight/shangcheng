@@ -30,7 +30,7 @@
             <div class="goods-price">￥232352</div>
             <div class="goods-item-num-contain">
               <div class="goods-item-num-minus" @click="minus"></div>
-              <input class="goods-item-num-input" type="number" pattern="[0-9]*" v-model="number">
+              <input class="goods-item-num-input" pattern="[0-9]*" v-model="number">
               <div class="goods-item-num-plus" @click="plus"></div>
             </div>
           </div>
@@ -119,6 +119,14 @@
       //   this.$refs.goodsDetailFooter.style.webkitBackdropFilter = "blur(14px)"
       //   this.$refs.goodsDetailFooter.style.backdropFilter = "blur(14px)"
       //   this.$refs.goodsDetailFooter.style.background = "rgba(255, 255, 255, 0.8)"
+      // }
+    },
+    watch:{
+      // number(){
+      //   console.log(1)
+      //   if(this.number<=1 || typeof(this.number)!=Number){
+      //     this.number = 1 
+      //   }
       // }
     },
     methods:{
