@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>日本线下商城</title>
+    <!-- <link rel="stylesheet" type="text/css" href="static/swiper.css"> -->
+    <!-- <script src="static/swiper.js"></script> -->
+  </head>
+  <body>
+    <div id="app">
+      <div class="goods-show">
+        <bg></bg>
+        <!-- <transition name="fade">
+          <div class="goods-search-bg" v-if="isSearch"></div>
+        </transition> -->
+        <div class="search-bar-contain">
+          <input class="search-bar" type="text" placeholder="请输入商品名称">
+          <div class="myorder-btn">我的订单</div>
+          <!-- <div class="search-btn">搜索</div> -->
+        </div>
+        <div class="show-bar-contain">
+          <div class="show-contain">日本当地门店直采q</div>
+          <div class="show-contain">日本直邮20元不限重</div>
+          <div class="show-contain">100%保真假一赔十</div>
+        </div>
+        <div class="goods-show-content">
+          <div class="goods-show-swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-div">
+                  <div class="swiper-div-pic"></div>
+                  <div class="swiper-div-text">时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-div">
+                  <div class="swiper-div-pic"></div>
+                  <div class="swiper-div-text">sdfasdffasdfasfsafsdf2</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-div">
+                  <div class="swiper-div-pic"></div>
+                  <div class="swiper-div-text">sdfasdffasdfasfsafsdf3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="today-bargain-conatin">
+            <div class="today-bargain-top">
+              <div class="today-bargain-left">
+                <span class="today-bargain-left-l">今日杀价</span><span class="today-bargain-left-r">每日更新</span>
+              </div>
+              <div class="today-bargain-right">
+                <span class="today-bargain-right-l">距结束</span>
+                <div class="today-bargain-right-r">
+                  <div class="today-bargain-right-r-box">02</div>
+                  <span class="today-bargain-right-r-m">:</span>
+                  <div class="today-bargain-right-r-box">16</div>
+                  <span class="today-bargain-right-r-m">:</span>
+                  <div class="today-bargain-right-r-box">50</div>
+                </div>
+              </div>
+            </div>
+            <div class="today-bargain-main">
+              <div class="today-bargain-goods">
+                <div class="today-bargain-goods-pic"></div>
+                <div class="today-bargain-goods-right">
+                  <div class="today-bargain-goods-right-top">上点击佛你上点击上点击飞速的佛司机分度搜圣诞节抖擞的惊悚大数据法搜dsfds第就分手都</div>
+                  <div class="today-bargain-goods-right-bottom">
+                    <div class="today-bargain-goods-right-bottom-left">
+                      <div class="today-bargain-newprice">￥345345</div>
+                      <s class="today-bargain-oldprice">￥345345</s>
+                    </div>
+                    <div class="today-bargain-goods-right-bottom-right">立即抢购</div>
+                  </div>
+                </div>
+              </div>
+              <div class="today-bargain-goods">
+                <div class="today-bargain-goods-pic"></div>
+                <div class="today-bargain-goods-right">
+                  <div class="today-bargain-goods-right-top">上点击佛你上点击上点击飞速的佛司机分度搜圣诞节抖擞的惊悚大数据法搜第就分手都</div>
+                  <div class="today-bargain-goods-right-bottom">
+                    <div class="today-bargain-goods-right-bottom-left">
+                      <div class="today-bargain-newprice">￥345345</div>
+                      <s class="today-bargain-oldprice">￥345345</s>
+                    </div>
+                    <div class="today-bargain-goods-right-bottom-right">立即抢购</div>
+                  </div>
+                </div>
+              </div>
+              <div class="today-bargain-goods">
+                <div class="today-bargain-goods-pic"></div>
+                <div class="today-bargain-goods-right">
+                  <div class="today-bargain-goods-right-top">上点击佛你上点击上点击飞速的佛司机分度搜圣诞节抖擞的惊悚大数据法搜第就分手都</div>
+                  <div class="today-bargain-goods-right-bottom">
+                    <div class="today-bargain-goods-right-bottom-left">
+                      <div class="today-bargain-newprice">￥345345</div>
+                      <s class="today-bargain-oldprice">￥345345</s>
+                    </div>
+                    <div class="today-bargain-goods-right-bottom-right">立即抢购</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="goods-perform-list">
+            <div class="goods-perform-item">
+              <div class="goods-perform-pic"></div>
+              <div class="goods-list clear">
+                <div class="goods-list-contain">
+                  <div class="goods-list-box clear">
+                    <router-link tag="div" class="goods-item" to="/goodsDetail">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </router-link>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="goods-perform-item">
+              <div class="goods-perform-pic"></div>
+              <div class="goods-list clear">
+                <div class="goods-list-contain">
+                  <div class="goods-list-box clear">
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                    <div class="goods-item">
+                      <div class="goods-item-content">
+                        <div class="goods-item-pic"></div>
+                        <div class="goods-item-text">撒旦法开始都批发价我时代峻峰我上点击飞速的颇丰酸豆角分度搜父节点水豆腐的房价松动</div>
+                        <div class="goods-item-price">￥8989</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+          
+
+        </div>
+        <div class="goods-show-footer"></div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
