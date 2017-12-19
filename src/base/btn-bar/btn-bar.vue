@@ -24,18 +24,4 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-@import '~common/stylus/mixin';
-
-.btn-bar{
-  .submit-btn{
-    float:right;
-  }
-  .cancel-btn{
-    float:right;
-  }
-  .see-btn{
-    float:right;
-  }
-}
-</style>
+<style scoped lang="stylus" rel="stylesheet/stylus" src="./btn-bar.styl"></style>

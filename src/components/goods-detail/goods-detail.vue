@@ -4,7 +4,7 @@
     <header class="goods-detail-header">
       <router-link tag="div" class="goods-detail-header-left" to="/">
         <div class="goods-detail-header-left-pic"></div>
-        <div class="goods-detail-header-left-text">日本线下商城</div>
+        <div class="goods-detail-header-left-text">海带宝日本代购</div>
       </router-link>
       <router-link tag="div" class="goods-detail-header-right" to="/find">
         <div class="goods-detail-header-right-text">更多好物推荐</div>
@@ -19,18 +19,19 @@
               <div class="swiper-slide" style="width:100%;height:300px;"></div>
               <div class="swiper-slide" style="width:100%;height:300px;"></div>
               <div class="swiper-slide" style="width:100%;height:300px;"></div>
+              <div class="swiper-slide" style="width:100%;height:300px;"></div>
             </div>
           </div>
           <div class="swiper-pagination" style="left:0;bottom:10px;right:0;"></div>
         </div>
         <div class="goods-bottom-contain">
           <div class="goods-text-note">懒人保湿专用</div>
-          <div class="goods-text">Saborino 早安面膜60秒 清晨懒人保湿免洗 黄色牛油果 保湿滋润款 32枚Saborino 早安面膜60秒 清晨懒人保湿免洗 黄色牛油果 保湿滋润款 32枚Saborino 早安面膜60秒 清晨懒人保湿免洗 黄色牛油果 保湿滋润款 32枚</div>
+          <div class="goods-text">Saborino 早安面膜60秒 清晨懒人保湿免洗 黄色牛油果 保湿</div>
           <div class="goods-bottom1">
-            <div class="goods-price">￥232352</div>
+            <div class="goods-price">￥223.00</div>
             <div class="goods-item-num-contain">
               <div class="goods-item-num-minus" @click="minus"></div>
-              <input class="goods-item-num-input" pattern="[0-9]*" v-model="number">
+              <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
               <div class="goods-item-num-plus" @click="plus"></div>
             </div>
           </div>
@@ -42,10 +43,12 @@
       </div>
       <div class="goods-detail-evaluate-box">
         <div class="evaluate-top">
-          <div class="evaluate-top-left">评价</div>
+          <div class="evaluate-top-left">
+            <div class="evaluate-top-left-text">评价</div><div class="evaluate-top-left-right-text">好评98.8%</div>
+          </div>
           <router-link tag="div" class="evaluate-top-more" to="/evaluateGoodsDetail">
             <div class="evaluate-top-more-pic"></div>
-            <div class="evaluate-top-more-text">好评98.8%</div>
+            <div class="evaluate-top-more-text">更多评价</div>
           </router-link>
         </div>
         <div class="evaluate-center">
@@ -73,6 +76,10 @@
       </div>
     </div>
     <footer class="goods-detail-footer">
+      <router-link tag="div" class="goods-detail-footer-item" to="/goodsShow">
+        <div class="goods-detail-footer-item-pic goods-detail-footer-item-pic0"></div>
+        <div class="goods-detail-footer-item-text">秒杀</div>
+      </router-link>
       <router-link tag="div" class="goods-detail-footer-item" to="/find">
         <div class="goods-detail-footer-item-pic goods-detail-footer-item-pic1"></div>
         <div class="goods-detail-footer-item-text">发现</div>
@@ -90,6 +97,7 @@
   import axios from 'axios'
   import qs from 'qs'
   import {url,urlapi} from 'api/config'
+  import $ from 'jquery'
   import Swiper from 'swiper'
   import Bg from 'base/bg/bg'
   import EvaluateGoodsItem from 'base/evaluate-goods-item/evaluate-goods-item'
@@ -107,6 +115,8 @@
     },
     mounted(){
       this.$nextTick(() => {
+        $('.goods-pic,.swiper-slide').css('height',$('.goods-pic').css('width'))
+
         let mySwiper = new Swiper('.swiper-container', {
           pagination : '.swiper-pagination'
         })
@@ -137,6 +147,12 @@
       },
       plus(){
         this.number++
+      },
+      checkNum(){
+        let reg=/^[1-9]\d*$|^0$/;
+        if(this.number < 1 || !reg.test(this.number)){
+          this.number = 1
+        }
       }
     },
     components: {

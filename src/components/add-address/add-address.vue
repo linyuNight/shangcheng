@@ -12,7 +12,7 @@
       </div>
       <div class="imformation-item">
         <div class="imformation-item-left">省市区</div>
-        <div class="imformation-item-input" style="color:#666" id="pro-city-area">请选择区域</div>
+        <div class="imformation-item-input" style="color:#000" id="pro-city-area">请选择区域</div>
       </div>
       <div class="imformation-item">
         <div class="imformation-item-left">详细地址</div>
@@ -46,7 +46,10 @@
               </div>
             </div>
           </div>
-          <button type="button" id="goods-closebtn">确认</button>
+          <div class="address-pop-top">
+            <button type="button" id="goods-canclebtn">取消</button>
+            <button type="button" id="goods-closebtn">完成</button>
+          </div>
         </div>
       </div>
     </div>
@@ -57,6 +60,7 @@
   import axios from 'axios'
   import qs from 'qs'
   import {url,urlapi} from 'api/config'
+  import {mapGetters,mapMutations,mapActions} from 'vuex'
   import Swiper from 'swiper'
   import $ from 'jquery'
   import Bg from 'base/bg/bg'
@@ -64,7 +68,7 @@
   export default {
     data() {
       return {
-        
+        content: ''
       }
     },
     created(){
@@ -186,6 +190,10 @@
               $(".goods-select-menu").fadeOut();
             })
 
+            $("#goods-canclebtn").on("click",function(e){
+              $(".goods-select-menu").fadeOut();
+            })
+
 
             // $(".submit-btn").click(function(){
             //  if($("#name").val() == ''){
@@ -215,7 +223,13 @@
     },
     methods:{
       save(){
-        this.$router.push({path: '/confirmationOrder'})
+        // this.$router.push({path: '/confirmationOrder'})
+        this.content = '收货人姓名至少2个字符'
+        this.showMainMask()
+      },
+      showMainMask(content){
+        this.$store.state.maskContent = this.content
+        this.$store.dispatch("setIsShowMask")
       }
     },
     components: {
@@ -224,153 +238,4 @@
   }
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "~common/stylus/mixin"
-
-  $yellow=#fdd953;
-  $red=#e84e40;
-  
-  .goods-select-menu{
-    position: fixed;
-    z-index: 10000;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    height:100%;
-    display: none;
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-  }
-  .swiper-container{
-    float:left;
-    width:28%;
-    height:40px;
-    overflow: visible!important;
-  }
-  .swiper-container:before{
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: 0;
-    right: 0;
-    bottom: -100px;
-  }
-  .swiper-container:nth-child(1){
-    margin:0 2% 0 4%;
-  }
-  .swiper-container:nth-child(2){
-    margin:0 2% 0 2%;
-  }
-  .swiper-container:nth-child(3){
-    margin:0 4% 0 2%;
-  }
-  .swiper-wrapper{
-    width:100%;
-    height:80px;
-  }
-  .visi-box{
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto;
-    width:100%;
-    height:280px;
-    overflow: hidden;
-    background: #fff;
-    z-index: 10000;
-    border-radius: 3px;
-  }
-  .visi-box-contain{
-    position:relative;
-    width:100%;
-    height:280px;
-  }
-  .visi-box-topline{
-    position:absolute;
-    top:100px;
-    left:0;
-    width:100%;
-    height:1px;
-    border-top:1px solid #999;
-  }
-  .visi-box-bottomline{
-    position:absolute;
-    top:140px;
-    left:0;
-    width:100%;
-    height:1px;
-    border-top:1px solid #999;
-  }
-  .visi-box-content{
-    position:absolute;
-    top:10px;
-    padding-top: 90px;
-    left:0;
-    width:100%;
-    height:220px;
-    overflow: hidden;
-  }
-  #goods-closebtn{
-    position: absolute;
-    bottom:10px;
-    left:0;
-    right:0;
-    margin: 0 auto;
-    width:200px;
-    height:40px;
-    line-height:40px; 
-    background:#fdd953;
-    border:none;
-  }
-  #pro-city-area {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-
-
-
-
-
-
-  .add-address{
-    position:absolute; 
-    z-index:200;
-    width:100%;
-    height:100%;
-    background:#f5f5f5;
-    .imformation-list{
-      background:#fff;
-      .imformation-item{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        .imformation-item-left{
-          width:100px;
-        }
-        .imformation-item-input{
-          width:calc(100% - 100px);
-        }
-      }
-    }
-    .save-btn-contain{
-      position:fixed;
-      left:0;
-      bottom:100px;
-      width:100%;
-      .save-btn{
-        margin:0 auto;
-        width:70%;
-        height:40px;
-        background:#fff;
-        border:1px solid #ccc;
-        text-align:center;
-        line-height:40px;
-      }
-    }
-  }
-</style>
+<style scoped lang="stylus" rel="stylesheet/stylus" src="./add-address.styl"></style>

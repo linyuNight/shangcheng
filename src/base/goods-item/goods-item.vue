@@ -26,36 +26,4 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-@import '~common/stylus/mixin';
-
-.goods-item{
-  width:100%;
-  height:110px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  .goods-item-pic{
-    width:90px;
-    height:90px;
-    background:#ffc;
-  }
-  .goods-item-right{
-    width:calc(100% - 90px);
-    .goods-item-text{
-
-    }
-    .goods-item-bottom{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      .goods-item-price{
-
-      }
-      .goods-item-num{
-        
-      }
-    }
-  }
-}
-</style>
+<style scoped lang="stylus" rel="stylesheet/stylus" src="./goods-item.styl"></style>

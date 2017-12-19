@@ -27,16 +27,4 @@
   }
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "~common/stylus/mixin"
-
-  $yellow=#fdd953;
-  $red=#e84e40;
-
-  .evaluate-detail{
-    position:absolute; 
-    z-index:300;
-    width:100%;
-    background:#f5f5f5;
-  }
-</style>
+<style scoped lang="stylus" rel="stylesheet/stylus" src="./evaluate-detail.styl"></style>

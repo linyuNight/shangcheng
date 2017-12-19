@@ -32,7 +32,7 @@ export default {
       moveX: 0, //滑动时的位置
       disX: 0, //移动距离
       deleteSlider: "", //滑动时的效果,使用v-bind:style="deleteSlider"
-      speed:5
+      speed:1
     };
   },
   methods: {
@@ -99,56 +99,4 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-@import '~common/stylus/mixin';
-
-$yellow = #fdd953;
-$red = #e84e40;
-
-.slider {
-  width: 100%;
-  height: 110px;
-  position: relative;
-  user-select: none;
-
-  .content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 100;
-    // 设置过渡动画
-    transition: 0.3s;
-  }
-
-  .hide-contain {
-    position: absolute;
-    width: 120px;
-    height: 110px;
-    right: 0;
-    top: 0;
-    .edit{
-      float:left;
-      width: 60px;
-      height: 110px;
-      color: #fff;
-      text-align: center;
-      font-size: 20px;
-      line-height: 110px;
-      background: $yellow;
-    }
-    .remove{
-      float:left;
-      width: 60px;
-      height: 110px;
-      color: #fff;
-      text-align: center;
-      font-size: 20px;
-      line-height: 110px;
-      background: $red;
-    }
-  }
-}
-</style>
+<style scoped lang="stylus" rel="stylesheet/stylus" src="./edit-delete.styl"></style>

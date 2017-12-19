@@ -7,6 +7,7 @@ const GoodsShow = () => import('components/goods-show/goods-show')
 const Classification = () => import('components/classification/classification')
 const Find = () => import('components/find/find')
 const Purchase = () => import('components/purchase/purchase')
+const PurchaseDelete = () => import('components/purchase-delete/purchase-delete')
 const GoodsDetail = () => import('components/goods-detail/goods-detail')
 const ArticalDetail = () => import('components/artical-detail/artical-detail')
 const ConfirmationOrder = () => import('components/confirmation-order/confirmation-order')
@@ -17,6 +18,7 @@ const EvaluateDetail = () => import('components/evaluate-detail/evaluate-detail'
 const EvaluateGoodsDetail = () => import('components/evaluate-goods-detail/evaluate-goods-detail')
 const ArticalEvaluateDetail = () => import('components/artical-evaluate-detail/artical-evaluate-detail')
 const ClassificationDetail = () => import('components/classification-detail/classification-detail')
+const MakeMoney = () => import('components/make-money/make-money')
 
 export default new Router({
   routes: [
@@ -29,7 +31,7 @@ export default new Router({
       name: 'goodsShow',
       component: GoodsShow,
       meta: {
-        title: '日本线下商城'
+        title: '海带宝日本代购'
       }
     },
     {
@@ -97,9 +99,28 @@ export default new Router({
       }
     },
     {
+      path: '/makeMoney',
+      name: 'makeMoney',
+      component: MakeMoney,
+      meta: {
+        title: '赚钱'
+      }
+    },
+    {
       path: '/purchase',
       name: 'purchase',
-      component: Purchase
+      component: Purchase,
+      meta: {
+        title: '购物车'
+      }
+    },
+    {
+      path: '/purchaseDelete',
+      name: 'purchaseDelete',
+      component: PurchaseDelete,
+      meta: {
+        title: '购物车'
+      }
     },
     {
       path: '/confirmationOrder',
