@@ -2,14 +2,24 @@
   <div class="my-order">
     <bg></bg>
     <div class="my-order-top">
-      <div class="my-order-tab">全部</div>
-      <div class="my-order-tab">待付款</div>
-      <div class="my-order-tab">采购中</div>
-      <div class="my-order-tab">已发货</div>
-      <div class="my-order-tab">已签收</div>
+      <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 0}" @click="setTopTap(0)">
+        <div class="my-order-tab-text">全部</div>
+      </div>
+      <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 1}" @click="setTopTap(1)">
+        <div class="my-order-tab-text">待付款</div>
+      </div>
+      <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 2}" @click="setTopTap(2)">
+        <div class="my-order-tab-text">采购中</div>
+      </div>
+      <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 3}" @click="setTopTap(3)">
+        <div class="my-order-tab-text">已发货</div>
+      </div>
+      <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 4}" @click="setTopTap(4)">
+        <div class="my-order-tab-text">已签收</div>
+      </div>
     </div>
     <div class="my-order-list">
-      <div class="my-order-item" v-for="order in orderList" key="order.state" @click="loadDetail(order)">
+      <div class="my-order-item" v-for="order in orderList" :key="order.state" @click="loadDetail(order)" v-show="order.state == selectTopTab || selectTopTab == 0">
         <div class="my-order-item-top">
           <div class="my-order-number">订单号&nbsp;&nbsp;{{order.orderNum}}</div>
           <div class="my-order-state">{{order.state | setState}}</div>
@@ -26,10 +36,10 @@
               </div>
             </div>
           </div> -->
-          <goods-item v-for="goods in order.goodsList" key="goods.text" :goods="goods"></goods-item>
+          <goods-item v-for="goods in order.goodsList" :key="goods.text" :goods="goods"></goods-item>
 
         </div>
-        <div class="goods-price-contain">共{{order.goodsList | calculateNum}}件商品&nbsp;合计：￥111.00（含运费￥20.00）</div>
+        <div class="goods-price-contain"><span class="goods-price-contain-text-left">共{{order.goodsList | calculateNum}}件商品</span><span class="goods-price-contain-text-center">合计：</span><span class="goods-price-contain-text-right">￥827</span><span class="goods-price-contain-text-note">（含运费￥20.00）</span></div>
         <!-- <div class="my-order-item-bottom clear">
           <div class="submit-btn" v-if="order.state == 1">立即支付</div>
           <div class="cancel-btn" v-if="order.state == 1">取消订单</div>
@@ -52,6 +62,7 @@
   export default {
     data() {
       return {
+        selectTopTab: 0,
         orderState: 0,
         orderList: [
           {
@@ -59,7 +70,7 @@
             orderNum:'rfg4619491',
             goodsList:[
               {
-                text:'shfiosdhiudsh1',
+                text:'shfiosdhi时代峰峻噢时代峰峻啥都搜地方水豆腐是否 的还是覅偶三点后啥都啥都还是丢是USDhiudsh1',
                 price:'2334',
                 qty:12
               },
@@ -178,6 +189,9 @@
       loadDetail(order){
         this.$store.state.order = order
         this.$router.push('/orderDetail')
+      },
+      setTopTap(selectTopTab){
+        this.selectTopTab = selectTopTab
       }
     },
     filters: {

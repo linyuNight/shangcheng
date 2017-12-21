@@ -5,9 +5,10 @@
       <div class="goods-search-bg" v-if="isSearch"></div>
     </transition>
     <div class="search-bar-contain">
-      <input class="search-bar" type="text" placeholder="请输入商品名称" @focus="focus" @blur="blur" ref="searchBar">
-      <router-link v-if="!isSearch" tag="div" class="myorder-btn" to="/myOrder">我的订单</router-link>
-      <div v-if="isSearch" class="search-btn">搜索</div>
+      <div class="return-pic" v-show="isSearch" @click="hideSearchBar"></div>
+      <input class="search-bar" type="text" placeholder="请输入商品名称" @focus="focus" ref="searchBar">
+      <router-link v-show="!isSearch" tag="div" class="myorder-btn" to="/myOrder">我的订单</router-link>
+      <div v-show="isSearch" class="search-btn">搜索</div>
     </div>
     <div class="show-bar-contain">
       <div class="show-contain">日本当地门店直采q</div>
@@ -314,7 +315,7 @@
       focus(){
         this.isSearch = true
       },
-      blur(){
+      hideSearchBar(){
         this.isSearch = false
       },
       getTime(){

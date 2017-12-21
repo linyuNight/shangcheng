@@ -25,8 +25,17 @@
     align-items:center;
     z-index:100;
     padding:0 15px;
+    .return-pic{
+      extend-click()
+      width:11px;
+      height:20px;
+      background-image:url(../../common/image/goods-show/back.png);
+      background-position:center;
+      background-size:100%;
+      background-repeat:no-repeat;
+    }
     .search-bar{
-      width:calc(100% - 90px);
+      width:calc(100% - 100px);
       height:27px;
       line-height:17px;
       padding:5px 0;
@@ -127,13 +136,14 @@
         display:flex;
         justify-content:space-between;
         align-items:center;
-        padding:0 15px;
+        padding-right:15px;
         borderbottom-1px($grey)
         .today-bargain-left{
           .today-bargain-left-l{
             font-size:14px;
             color:#000;
             margin-right:6px;
+            font-weight:bold;
           }
           .today-bargain-left-r{
             font-size:12px;

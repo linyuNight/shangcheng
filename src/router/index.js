@@ -19,12 +19,16 @@ const EvaluateGoodsDetail = () => import('components/evaluate-goods-detail/evalu
 const ArticalEvaluateDetail = () => import('components/artical-evaluate-detail/artical-evaluate-detail')
 const ClassificationDetail = () => import('components/classification-detail/classification-detail')
 const MakeMoney = () => import('components/make-money/make-money')
+const TransactionDetail = () => import('components/transaction-detail/transaction-detail')
 
 export default new Router({
   routes: [
     {
       path: '/',
       redirect: '/goodsShow',
+      meta: {
+        title: '海带宝日本代购'
+      }
     },
     {
       path: '/goodsShow',
@@ -125,22 +129,42 @@ export default new Router({
     {
       path: '/confirmationOrder',
       name: 'confirmationOrder',
-      component: ConfirmationOrder
+      component: ConfirmationOrder,
+      meta: {
+        title: '确认订单'
+      }
     },
     {
       path: '/addAddress',
       name: 'addAddress',
-      component: AddAddress
+      component: AddAddress,
+      meta: {
+        title: '添加地址'
+      }
+    },
+    {
+      path: '/transactionDetail',
+      name: 'transactionDetail',
+      component: TransactionDetail,
+      meta: {
+        title: '交易详情'
+      }
     },
     {
       path: '/myOrder',
       name: 'myOrder',
-      component: MyOrder
+      component: MyOrder,
+      meta: {
+        title: '我的订单'
+      }
     },
     {
       path: '/orderDetail',
       name: 'orderDetail',
-      component: OrderDetail
+      component: OrderDetail,
+      meta: {
+        title: '我的订单'
+      }
     }
   ]
 })

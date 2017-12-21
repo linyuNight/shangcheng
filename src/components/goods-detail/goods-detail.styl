@@ -46,16 +46,16 @@
       }
     }
     .goods-detail-header-right{
-      width:95px;
       height:40px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
+      line-height:40px;
+      text-align:right;
       .goods-detail-header-right-text{
+        display:inline-block;
         font-size:14px;
         color:#000;
       }
       .goods-detail-header-right-pic{
+        display:inline-block;
         width:5px;
         height:9px;
         background-image:url(../../common/image/goods-detail/img37.png);
@@ -103,12 +103,21 @@
           display:flex;
           justify-content:space-between;
           align-items:center;
-          .goods-price{
+          .goods-price-box{
             margin-left:-4px;
-            position:relative;
-            top:4px;
-            font-size:24px;
-            color:$red;
+            .goods-new-price{
+              display:inline-block;
+              font-size:24px;
+              color:$red;
+              position:relative;
+              top:4px;
+            }
+            .goods-old-price{
+              font-size: 12px;
+              color: #999;
+              position:relative;
+              top:3px;
+            }
           }
           .goods-item-num-contain{
             display:flex;

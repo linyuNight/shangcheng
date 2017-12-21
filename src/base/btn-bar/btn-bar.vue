@@ -2,7 +2,7 @@
   <!-- <div class="btn-bar">
     
   </div> -->
-  <div class="btn-bar clear">
+  <div class="btn-bar clear" v-if="state == 1 || state == 4 || state == 5">
     <div class="submit-btn" v-if="state == 1">立即支付</div>
     <div class="cancel-btn" v-if="state == 1">取消订单</div>
     <div class="see-btn" v-if="state == 4 || state == 5">查看物流</div>

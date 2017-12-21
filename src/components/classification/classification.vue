@@ -8,9 +8,10 @@
       <div class="goods-search-content-box">
         <div class="goods-search-content">
           <div class="goods-search-input-contain">
-            <input class="goods-search-input" v-model="searchMessage" @focus="focus" @blur="blur" type="text" placeholder="请输入商品或品牌名称" />
-            <div class="clear-btn" v-show="searchMessage" @click="clear"></div>
-            <!-- <button class="search-btn">搜索</button> -->
+            <div class="return-pic" v-show="isSearch" @click="hideSearchBar"></div>
+            <input class="goods-search-input" v-model="searchMessage" @focus="focus" type="text" placeholder="请输入商品或品牌名称" :class="{'goods-search-input-focus': isSearch}" />
+            <!-- <div class="clear-btn" v-show="searchMessage" @click="clear"></div> -->
+            <div class="search-btn" v-show="isSearch">搜索</div>
           </div>
         </div>
       </div>
@@ -214,7 +215,7 @@
       focus(){
         this.isSearch = true
       },
-      blur(){
+      hideSearchBar(){
         this.isSearch = false
       },
       show(e){

@@ -130,7 +130,7 @@
       </div>
     </div>
     <footer class="order-footer clear">
-      <div class="pay">确认支付</div>
+      <router-link tag="div" class="pay" to="/transactionDetail">确认支付</router-link>
       <div class="order-footer-price">￥96.00</div>
       <div class="order-footer-text">合计：</div>
     </footer>
