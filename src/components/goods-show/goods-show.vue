@@ -10,24 +10,20 @@
       <router-link v-show="!isSearch" tag="div" class="myorder-btn" to="/myOrder">我的订单</router-link>
       <div v-show="isSearch" class="search-btn">搜索</div>
     </div>
-    <div class="show-bar-contain">
-      <div class="show-contain">日本当地门店直采q</div>
-      <div class="show-contain">日本直邮20元不限重</div>
-      <div class="show-contain">100%保真假一赔十</div>
-    </div>
+    <div class="show-bar-contain"></div>
     <div class="goods-show-content">
       <div class="goods-show-swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <router-link tag="div" class="swiper-div" to="/articalDetail">
               <div class="swiper-div-pic"></div>
-              <div class="swiper-div-text">时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐</div>
+              <div class="swiper-div-text">时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐</div>
             </router-link>
           </div>
           <div class="swiper-slide">
             <router-link tag="div" class="swiper-div" to="/articalDetail">
               <div class="swiper-div-pic"></div>
-              <div class="swiper-div-text">sdfasdffasdfasfsafsdf2</div>
+              <div class="swiper-div-text">时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐时代峰峻山东if技术都我减肥的搜ifO记佛酸豆角佛山的发的搜集发酸豆角山东你放假水sdsdfsdf豆腐</div>
             </router-link>
           </div>
           <div class="swiper-slide">

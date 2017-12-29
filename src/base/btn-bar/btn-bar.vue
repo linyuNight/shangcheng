@@ -2,10 +2,10 @@
   <!-- <div class="btn-bar">
     
   </div> -->
-  <div class="btn-bar clear" v-if="state == 1 || state == 4 || state == 5">
-    <div class="submit-btn" v-if="state == 1">立即支付</div>
+  <div class="btn-bar clear" v-if="state == 1 || state == 3 || state == 4">
+    <router-link tag="div" class="submit-btn" to="/transactionDetail" v-if="state == 1">立即支付</router-link>
     <div class="cancel-btn" v-if="state == 1">取消订单</div>
-    <div class="see-btn" v-if="state == 4 || state == 5">查看物流</div>
+    <router-link tag="div" class="see-btn" to="/logisticsDetails" v-if="state == 3 || state == 4">查看物流</router-link>
   </div>
 </template>
 

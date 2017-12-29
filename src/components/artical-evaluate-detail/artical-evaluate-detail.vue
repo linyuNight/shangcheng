@@ -74,6 +74,7 @@
         this.isShow = false
         this.evaluate = this._evaluate
         $('.artical-evaluate-detail-input').css('height',`${this.height}px`)
+        $('.artical-evaluate-detail-footer').css('padding','10px 15px 40px')
         // window.setTimeout('this.scrollBottom()', 500);
       },
       blur(){
@@ -82,6 +83,7 @@
         this.evaluate = ''
         this.height = $('.artical-evaluate-detail-input').height()
         $('.artical-evaluate-detail-input').css('height','30px')
+        $('.artical-evaluate-detail-footer').css('padding','10px 15px')
       },
       // scrollBottom() {
       //   window.scrollTo(0, $('body').height());

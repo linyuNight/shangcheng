@@ -75,47 +75,42 @@
     }
   }
   .show-bar-contain{
-    margin-top:43px;
+    margin:43px 0 8px;
     width:100%;
-    height:90px;
-    background:$yellow;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     z-index:50;
-    .show-contain{
-      width:30%;
-      height:80px;
-      background:#fff;
-    }
+    bg('../../common/image/goods-show/banner2.jpg');
+    height:175px;
+    background-size:cover;
   }
   .goods-show-content{
     width:100%;
     height:auto;
     .goods-show-swiper{
       width:100%;
-      height:50px;
+      height:80px;
       background:#fff;
-      padding-right:15px;
-      margin-bottom:10px;
+      margin-bottom:8px;
       .swiper-div{
         width:100%;
-        height:50px;
+        height:80px;
+        padding:5px 15px;
         display:flex;
         justify-content:space-between;
         align-items:center;
         background:#fff;
         .swiper-div-pic{
-          width:110px;
-          height:50px;
+          width:93px;
+          height:70px;
           background-image:url(../../common/image/goods-show/img01.png);
           background-position:center;
-          background-size:contain;
+          background-size:cover;
           background-repeat:no-repeat;
         }
         .swiper-div-text{
-          width:calc(100% - 125px);
-          line-height:19px;
+          width:calc(100% - 106px);
+          line-height:24px;
+          height:48px;
+          font-size:16px;
           overflow: hidden;
           text-overflow: ellipsis;
           -webkit-box-orient: vertical;
@@ -178,9 +173,95 @@
       .today-bargain-main{
         width:100%;
         height:auto;
+        // .today-bargain-goods{
+        //   width:100%;
+        //   height:95px;
+        //   display:flex;
+        //   justify-content:space-between;
+        //   align-items:center;
+        //   &:last-child{
+        //     .today-bargain-goods-right-contain:after{
+        //       border-top:none;
+        //     }
+        //   }
+        //   .today-bargain-goods-pic{
+        //     width:75px;
+        //     height:75px;
+        //     background-image:url(../../common/image/goods-show/img02.png);
+        //     background-position:center;
+        //     background-size:contain;
+        //     background-repeat:no-repeat;
+        //   }
+        //   .today-bargain-goods-right-contain{
+        //     height:95px;
+        //     padding:10px 15px 10px 0;
+        //     width:calc(100% - 105px);
+        //     borderbottom-1px($grey)
+        //     .today-bargain-goods-right{
+        //       position:relative;
+        //       width:100%;
+        //       height:75px;
+        //       margin-right:15px;
+        //       .today-bargain-goods-right-top{
+        //         position:absolute;
+        //         left:0;
+        //         top:0;
+        //         width:100%;
+        //         font-size:13px;
+        //         color:#000;
+        //         line-height:18px;
+        //         overflow: hidden;
+        //         text-overflow: ellipsis;
+        //         -webkit-box-orient: vertical;
+        //         display: -webkit-box;
+        //         -webkit-line-clamp: 2;
+        //       }
+        //       .today-bargain-goods-right-bottom{
+        //         position:absolute;
+        //         left:0;
+        //         bottom:0;
+        //         width:100%;
+        //         display:flex;
+        //         justify-content:space-between;
+        //         align-items:center;
+        //         .today-bargain-goods-right-bottom-left{
+        //           display:flex;
+        //           justify-content:space-between;
+        //           align-items:center;
+        //         }
+        //           .today-bargain-newprice{
+        //             color:$red;
+        //             font-size:16px;
+        //             margin-right:6px;
+        //             margin-top:8px;
+        //           }
+        //           .today-bargain-oldprice{
+        //             color:#999999;
+        //             font-size:12px;
+        //             margin-top:12px;
+        //           }
+        //         .today-bargain-goods-right-bottom-right{
+        //           extend-click();
+        //           width:63px;
+        //           height:24px;
+        //           background-color:$red;
+        //           color:#fff;
+        //           font-size:12px;
+        //           text-align:center;
+        //           line-height:24px;
+        //         }
+        //       }
+        //     }
+        //   }
+        //   &:last-child{
+        //     .today-bargain-goods-right-contain{
+        //       border-top:none;
+        //     }
+        //   }
+        // }
         .today-bargain-goods{
           width:100%;
-          height:95px;
+          height:110px;
           display:flex;
           justify-content:space-between;
           align-items:center;
@@ -190,22 +271,22 @@
             }
           }
           .today-bargain-goods-pic{
-            width:75px;
-            height:75px;
-            background-image:url(../../common/image/goods-show/img02.png);
+            width:90px;
+            height:90px;
+            background-image:url(../../common/image/goods-show/222.jpg);
             background-position:center;
-            background-size:contain;
+            background-size:120%;
             background-repeat:no-repeat;
           }
           .today-bargain-goods-right-contain{
-            height:95px;
+            height:110px;
             padding:10px 15px 10px 0;
             width:calc(100% - 105px);
             borderbottom-1px($grey)
             .today-bargain-goods-right{
               position:relative;
               width:100%;
-              height:75px;
+              height:90px;
               margin-right:15px;
               .today-bargain-goods-right-top{
                 position:absolute;
@@ -327,7 +408,7 @@
                     height:100px;
                     background-image:url(../../common/image/goods-show/img04.png);
                     background-position:center;
-                    background-size:contain;
+                    background-size:110%;
                     background-repeat:no-repeat;
                   }
                   .goods-item-text{
@@ -353,7 +434,7 @@
                   }
                   .goods-item-content-more{
                     width:100px;
-                    height:100px;
+                    height:160px;
                     background:#f2f2f2;
                     display: flex;
                     align-items: center;

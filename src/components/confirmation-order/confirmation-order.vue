@@ -125,7 +125,7 @@
     </div>
     <div class="goods-price-box">
       <div class="goods-price-contain">
-        <div class="goods-price-total"><span class="goods-price-total-left">商品总额：</span><span class="goods-price-total-text">￥807</span></div>
+        <div class="goods-price-total"><span class="goods-price-total-left">商品总额：</span><span class="goods-price-total-text">￥8017</span></div>
         <div class="goods-freight"><span class="goods-price-total-left">国际运费：</span><span class="goods-price-total-text">￥20</span></div>
       </div>
     </div>
@@ -198,6 +198,34 @@
                 </div>
               </div>
             </edit-delete> -->
+            <edit-delete>
+              <div class="user-select-item" @click="selectItem">
+                <input class="user-select-item-left" type="radio" name="user">
+                <div class="user-select-item-center">
+                  <div class="user-select-item-center-top clear">
+                    <div class="user-select-item-name">黄小明</div>
+                    <div class="user-select-item-phone">12345678921</div>
+                  </div>
+                  <div class="user-select-item-address-box">
+                    <div class="user-select-item-center-bottom">广东省深圳市南山区振业国际商务中心7楼海带宝前台桌子上</div>
+                  </div>
+                </div>
+              </div>
+            </edit-delete>
+            <edit-delete>
+              <div class="user-select-item" @click="selectItem">
+                <input class="user-select-item-left" type="radio" name="user">
+                <div class="user-select-item-center">
+                  <div class="user-select-item-center-top clear">
+                    <div class="user-select-item-name">黄小明</div>
+                    <div class="user-select-item-phone">12345678921</div>
+                  </div>
+                  <div class="user-select-item-address-box">
+                    <div class="user-select-item-center-bottom">广东省深圳市南山区振业国际商务中心7楼海带宝前台桌子上</div>
+                  </div>
+                </div>
+              </div>
+            </edit-delete>
             <edit-delete>
               <div class="user-select-item" @click="selectItem">
                 <input class="user-select-item-left" type="radio" name="user">

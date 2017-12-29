@@ -92,7 +92,7 @@
           height:20px;
           line-height:20px;
           font-size:13px;
-          color:#666666;
+          color:$gold;
         }
         .goods-text{
           line-height:24px;
@@ -257,6 +257,9 @@
       }
       .goodsdetail-main{
         width:100%;
+        *{
+          width:100%;
+        }
         .goodsdetail-main-pic{
           width:100%;
         }
@@ -309,12 +312,27 @@
       flex:1
       height:50px;
       .goods-detail-footer-item-pic{
+        position:relative;
         margin:7px auto 5px;
         width:20px;
         height:20px;
         background-position:center;
         background-size:contain;
         background-repeat:no-repeat;
+        .purchase-num{
+          position:absolute;
+          left:10px;
+          top:-6px;
+          display:inline-block;
+          background:$red;
+          border-radius:9px;
+          height:18px;
+          line-height:18px;
+          padding:0 6px;
+          color:#fff;
+          font-size:12px;
+          transform:scale(.8);
+        }
       }
       .goods-detail-footer-item-pic0{
         background-image:url(../../common/image/goods-detail/icon.png);
@@ -339,8 +357,56 @@
       background:$red;
       color:#fff;
       font-size:16px;
-      // border-radius:3px;
       z-index:220;
+    }
+    .goods-detail-footer-add-disable{
+      width:165px;
+      height:50px;
+      text-align:center;
+      line-height:50px;
+      background:#999;
+      color:#fff;
+      font-size:16px;
+      z-index:220;
+    }
+  }
+  .share-mask{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,.7);
+    z-index:300;
+    .share-mask-pc1{
+      position:absolute;
+      right:25px;
+      top:11px;
+      width:64px;
+      height:53px;
+      bg('../../common/image/share-mask/arrow.png');
+    }
+    .share-mask-pc2{
+      position:absolute;
+      right:100px;
+      top:48px;
+      width:111px;
+      height:46px;
+      bg('../../common/image/share-mask/font.png');
+    }
+    .share-mask-text{
+      margin:107px auto 0;
+      font-size:14px;
+      color:#fff;
+      height:63px;
+      text-align:center;
+      line-height:63px;
+    }
+    .share-mask-pc3{
+      margin:0 auto;
+      width:100px;
+      height:40px;
+      bg('../../common/image/share-mask/button.png');
     }
   }
 }

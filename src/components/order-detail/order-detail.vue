@@ -58,10 +58,10 @@
       </div>
     </div>
     
-    <div class="goods-imformation-btn-bar" v-if="order.state == 1 || order.state == 4 || order.state == 5">
+    <div class="goods-imformation-btn-bar" v-if="order.state == 1 || order.state == 3 || order.state == 4">
       <btn-bar :state="order.state"></btn-bar>
     </div>
-    <footer class="footer-space" v-if="order.state == 1 || order.state == 4 || order.state == 5"></footer>
+    <footer class="footer-space" v-if="order.state == 1 || order.state == 3 || order.state == 4"></footer>
   </div>
 </template>
 

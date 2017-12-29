@@ -88,11 +88,22 @@
         <div class="goods-detail-footer-item-text">发现</div>
       </router-link>
       <router-link tag="div" class="goods-detail-footer-item" to="/purchase">
-        <div class="goods-detail-footer-item-pic goods-detail-footer-item-pic2"></div>
+        <div class="goods-detail-footer-item-pic goods-detail-footer-item-pic2">
+          <div class="purchase-num">23</div>
+        </div>
         <div class="goods-detail-footer-item-text">购物车</div>
       </router-link>
-      <div class="goods-detail-footer-add">加入购物车</div>
+      <div class="goods-detail-footer-add" v-if="isAdd">加入购物车</div>
+      <div class="goods-detail-footer-add-disable" v-if="!isAdd">库存不足</div>
     </footer>
+    <transition name="fade">
+      <div class="share-mask" @click="hide" v-show="isShow">
+        <div class="share-mask-pc1"></div>
+        <div class="share-mask-pc2"></div>
+        <p class="share-mask-text">好友通过你的链接购买商品后，你就会获得奖励</p>
+        <div class="share-mask-pc3"></div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -110,6 +121,8 @@
     data() {
       return {
         number: 1,
+        isShow:true,
+        isAdd:false,
         slider: [
           {
             src: 'static/img/1.jpg'
@@ -436,6 +449,9 @@
           this.number--
         }
       },
+      hide(){
+        this.isShow = false
+      },
       plus(){
         this.number++
       },
@@ -444,6 +460,9 @@
         if(this.number < 1 || !reg.test(this.number)){
           this.number = 1
         }
+      },
+      slideClick(index){
+        this.openPhotoSwipe(index)
       }
     },
     components: {

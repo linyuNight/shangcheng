@@ -1,6 +1,28 @@
 $grey=#d7d7d7;
 $yellow=#fdd953;
 $red=#e51c23;
+$gold=#c5ae84;
+$font=#333;
+
+flex-between(){
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+flex-column(){
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+bg($url){
+  background-image:url($url);
+  background-position:center;
+  background-size:100%;
+  background-repeat:no-repeat;
+}
 
 // // 背景图片
 bg-image($url)

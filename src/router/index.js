@@ -20,6 +20,8 @@ const ArticalEvaluateDetail = () => import('components/artical-evaluate-detail/a
 const ClassificationDetail = () => import('components/classification-detail/classification-detail')
 const MakeMoney = () => import('components/make-money/make-money')
 const TransactionDetail = () => import('components/transaction-detail/transaction-detail')
+const LogisticsDetails = () => import('components/logistics-details/logistics-details')
+
 
 export default new Router({
   routes: [
@@ -163,7 +165,15 @@ export default new Router({
       name: 'orderDetail',
       component: OrderDetail,
       meta: {
-        title: '我的订单'
+        title: '订单详情'
+      }
+    },
+    {
+      path: '/logisticsDetails',
+      name: 'logisticsDetails',
+      component: LogisticsDetails,
+      meta: {
+        title: '物流详情'
       }
     }
   ]

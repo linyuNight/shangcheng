@@ -99,7 +99,7 @@
           var trr = 0;
           var mySwiper2 = {};
           var mySwiper3 = {};
-          var onece_select = '<div class="swiper-slide child-select" style="text-align:center;line-height:40px" value="';
+          var onece_select = '<div class="swiper-slide child-select" style="text-align:center;line-height:20px;display:flex;display:-webkit-flex;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center" value="';
 
           //初始化
           for(var i = 0;i<region_data[0].length;i++){

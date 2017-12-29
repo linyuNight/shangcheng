@@ -18,7 +18,9 @@
       <div class="tab-item-text">赚钱</div>
     </router-link>
     <router-link tag="div" class="tab-item" to="/purchase">
-      <div class="tab-item-pic tab-item-pic5"></div>
+      <div class="tab-item-pic tab-item-pic5">
+        <div class="purchase-num">42</div>
+      </div>
       <div class="tab-item-text">购物车</div>
     </router-link>
   </div>

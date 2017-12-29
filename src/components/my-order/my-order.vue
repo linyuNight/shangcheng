@@ -19,12 +19,12 @@
       </div>
     </div>
     <div class="my-order-list">
-      <div class="my-order-item" v-for="order in orderList" :key="order.state" @click="loadDetail(order)" v-show="order.state == selectTopTab || selectTopTab == 0">
-        <div class="my-order-item-top">
+      <div class="my-order-item" v-for="order in orderList" :key="order.state" v-show="order.state == selectTopTab || selectTopTab == 0">
+        <div class="my-order-item-top" @click="loadDetail(order)">
           <div class="my-order-number">订单号&nbsp;&nbsp;{{order.orderNum}}</div>
           <div class="my-order-state">{{order.state | setState}}</div>
         </div>
-        <div class="goods-list">
+        <div class="goods-list" @click="loadDetail(order)">
 
           <!-- <div class="goods-item" v-for="goods in order.goodsList">
             <div class="goods-item-pic"></div>
@@ -39,7 +39,7 @@
           <goods-item v-for="goods in order.goodsList" :key="goods.text" :goods="goods"></goods-item>
 
         </div>
-        <div class="goods-price-contain"><span class="goods-price-contain-text-left">共{{order.goodsList | calculateNum}}件商品</span><span class="goods-price-contain-text-center">合计：</span><span class="goods-price-contain-text-right">￥827</span><span class="goods-price-contain-text-note">（含运费￥20.00）</span></div>
+        <div class="goods-price-contain" @click="loadDetail(order)"><span class="goods-price-contain-text-left">共{{order.goodsList | calculateNum}}件商品</span><span class="goods-price-contain-text-center">合计：</span><span class="goods-price-contain-text-right">￥827</span><span class="goods-price-contain-text-note">（含运费￥20.00）</span></div>
         <!-- <div class="my-order-item-bottom clear">
           <div class="submit-btn" v-if="order.state == 1">立即支付</div>
           <div class="cancel-btn" v-if="order.state == 1">取消订单</div>
@@ -48,6 +48,7 @@
         <btn-bar :state="order.state"></btn-bar>
       </div>
     </div>
+    <router-link tag="div" class="return-goods-show" to="/goodsShow"></router-link>
   </div>
 </template>
 

@@ -23,7 +23,8 @@
     <div class="goods-list clear" v-if="left">
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DH</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -31,7 +32,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -39,7 +41,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -47,7 +50,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -55,7 +59,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -63,7 +68,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -71,7 +77,26 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
+        <div class="goods-item-bottom">
+          <div class="goods-item-price">￥38.00</div>
+          <div class="goods-item-hassale">已售1235</div>
+        </div>
+      </div>
+      <div class="goods-item">
+        <div class="goods-item-pic"></div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
+        <div class="goods-item-bottom">
+          <div class="goods-item-price">￥38.00</div>
+          <div class="goods-item-hassale">已售1235</div>
+        </div>
+      </div>
+      <div class="goods-item">
+        <div class="goods-item-pic"></div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -82,7 +107,8 @@
     <div class="goods-list clear" v-if="!left">
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...222</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -90,7 +116,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -98,7 +125,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -106,7 +134,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -114,7 +143,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -122,7 +152,8 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
@@ -130,7 +161,17 @@
       </div>
       <div class="goods-item">
         <div class="goods-item-pic"></div>
-        <div class="goods-item-text">日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干...</div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
+        <div class="goods-item-bottom">
+          <div class="goods-item-price">￥38.00</div>
+          <div class="goods-item-hassale">已售1235</div>
+        </div>
+      </div>
+      <div class="goods-item">
+        <div class="goods-item-pic"></div>
+        <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
+        <div class="goods-item-text">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..</div>
         <div class="goods-item-bottom">
           <div class="goods-item-price">￥38.00</div>
           <div class="goods-item-hassale">已售1235</div>
