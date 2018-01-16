@@ -14,6 +14,7 @@
     <div class="goods-detail-main">
       <div class="goods-detail-goods-box">
         <div class="goods-pic">
+          <div class="miaosha"></div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="item in slider" :style="{backgroundImage:'url(' + item.src + ')'}"></div>
@@ -352,7 +353,9 @@
         initPhotoSwipeFromDOM('.evaluate-center-pic-list');
 
         $(function(){
-          $('.goods-pic,.swiper-container,.swiper-slide').css('height',$('.goods-pic').css('width'))
+          // $('.goods-pic,.swiper-container,.swiper-slide').css('height',$('.goods-pic').css('width'))
+
+          $('.goods-pic,.swiper-container,.swiper-slide').css('height','325px')
 
           var mySwiper = new Swiper('.swiper-container', {
             pagination : '.swiper-pagination'

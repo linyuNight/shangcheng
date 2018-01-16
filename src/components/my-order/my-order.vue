@@ -1,6 +1,8 @@
 <template>
   <div class="my-order">
-    <bg></bg>
+    <bg>
+      <div class="empty-bg-bottom" v-if="isEmpty"></div>
+    </bg>
     <div class="my-order-top">
       <div class="my-order-tab" :class="{'my-order-tab-active': selectTopTab == 0}" @click="setTopTap(0)">
         <div class="my-order-tab-text">全部</div>
@@ -18,7 +20,7 @@
         <div class="my-order-tab-text">已签收</div>
       </div>
     </div>
-    <div class="my-order-list">
+    <div class="my-order-list" v-if="!isEmpty">
       <div class="my-order-item" v-for="order in orderList" :key="order.state" v-show="order.state == selectTopTab || selectTopTab == 0">
         <div class="my-order-item-top" @click="loadDetail(order)">
           <div class="my-order-number">订单号&nbsp;&nbsp;{{order.orderNum}}</div>
@@ -48,7 +50,16 @@
         <btn-bar :state="order.state"></btn-bar>
       </div>
     </div>
-    <router-link tag="div" class="return-goods-show" to="/goodsShow"></router-link>
+    <router-link tag="div" class="return-goods-show" to="/goodsShow" v-if="!isEmpty"></router-link>
+    <div class="empty-page" v-if="isEmpty">
+      <div class="empty-round"></div>
+      <div class="empty-icon"></div>
+      <div class="text-contain">        
+        <p class="empty-text1">暂无相关订单~</p>
+        <p class="empty-text2">最热门的商品正在等你哟</p>
+      </div>
+      <div class="link-btn">去逛逛</div>
+    </div>
   </div>
 </template>
 
@@ -65,6 +76,7 @@
       return {
         selectTopTab: 0,
         orderState: 0,
+        isEmpty: true,
         orderList: [
           {
             state: 1,

@@ -1,16 +1,18 @@
 <template>
   <div class="purchase">
-    <bg></bg>
+    <bg>
+      <div class="empty-bg-bottom" v-if="isEmpty"></div>
+    </bg>
     <header class="goods-detail-header">
       <router-link tag="div" class="goods-detail-header-left" to="/">
         <div class="goods-detail-header-left-pic"></div>
         <div class="goods-detail-header-left-text">海带宝日本代购</div>
       </router-link>
-      <router-link tag="div" class="goods-detail-header-right" to="/purchaseDelete">
+      <router-link tag="div" class="goods-detail-header-right" to="/purchaseDelete" v-if="!isEmpty">
         <div class="goods-detail-header-right-text">编辑</div>
       </router-link>
     </header>
-    <div class="goods-list">
+    <div class="goods-list" v-if="!isEmpty">
       <delete>
         <div class="goods-item">
           <input class="goods-item-input" type="checkbox" name="goods" />
@@ -139,7 +141,7 @@
       </delete>
       
     </div>
-    <footer class="purchase-footer">
+    <footer class="purchase-footer" v-if="!isEmpty">
       <div class="footer-left">
         <input class="total-select" type="checkbox" name="goods" />
         <div class="total-text">全选</div>
@@ -155,6 +157,14 @@
         <router-link tag="div" class="submit-btn" to="/confirmationOrder">去支付</router-link>
       </div>
     </footer>
+    <div class="empty-page" v-if="isEmpty">
+      <div class="empty-round"></div>
+      <div class="empty-icon"></div>
+      <div class="text-contain">        
+        <p class="empty-text1">购物车还是空的，快去选购吧~</p>
+      </div>
+      <div class="link-btn">去逛逛</div>
+    </div>
   </div>
 </template>
 
@@ -169,7 +179,8 @@
   export default {
     data() {
       return {
-        number: 1
+        number: 1,
+        isEmpty: true
       }
     },
     created(){

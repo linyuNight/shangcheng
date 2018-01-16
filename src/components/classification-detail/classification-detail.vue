@@ -1,6 +1,8 @@
 <template>
   <div class="classification-detail">
-    <bg></bg>
+    <bg>
+      <div class="empty-bg-bottom" v-if="isEmpty"></div>
+    </bg>
     <div class="goods-search">
       <div class="goods-search-content-box">
         <div class="goods-search-content">
@@ -12,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="list-sort-contain">
+    <div class="list-sort-contain" v-if="!isEmpty">
       <div class="list-sort-left" :class="{active: left}"  @click="selectLeft">
         <div class="list-sort-left-content">销量</div>
       </div>
@@ -20,7 +22,7 @@
         <div class="list-sort-right-content">最新</div>
       </div>
     </div>
-    <div class="goods-list clear" v-if="left">
+    <div class="goods-list clear" v-if="left && !isEmpty">
       <div class="goods-item">
         <div class="goods-item-pic"></div>
         <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
@@ -104,7 +106,7 @@
       </div>
 
     </div>
-    <div class="goods-list clear" v-if="!left">
+    <div class="goods-list clear" v-if="!left && !isEmpty">
       <div class="goods-item">
         <div class="goods-item-pic"></div>
         <div class="goods-item-title">日本DH日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天然植物无色润唇滋润淡化唇纹防干..日本DHC橄榄护唇膏 天</div>
@@ -178,6 +180,13 @@
         </div>
       </div>
 
+    </div>
+    <div class="empty-page" v-if="isEmpty">
+      <div class="empty-round"></div>
+      <div class="empty-icon"></div>
+      <div class="text-contain">        
+        <p class="empty-text1">没有找到相关商品，换个词试试吧~</p>
+      </div>
     </div>
   </div>
 </template>
@@ -194,7 +203,8 @@
       return {
         isSearch: false,
         left: true,
-        searchMessage: ''
+        searchMessage: '',
+        isEmpty: true
       }
     },
     created(){

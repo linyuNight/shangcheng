@@ -1,22 +1,16 @@
 @import "~common/stylus/mixin"
 
 .evaluate-goods-item{
-  margin:0 auto;
+  margin:0 auto 8px;
   width:100%;
   background:#fff;
   padding:0 15px;
   &:last-child{
-    .evaluate-content:after{
-      border-top:none;
-    }
+    margin:0 auto 0;
   }
   .evaluate-content{
     width:100%;
     padding:15px 0;
-    borderbottom-1px($grey)
-    // &:first-child{
-    //   padding-top:0;
-    // }
     .evaluate-center-top{
       display:flex;
       justify-content:space-between;
@@ -33,11 +27,6 @@
     }
     .evaluate-center-text{
       line-height:18px;
-      // overflow: hidden;
-      // text-overflow: ellipsis;
-      // -webkit-box-orient: vertical;
-      // display: -webkit-box;
-      // -webkit-line-clamp: 2;
       font-size:13px;
       color:#000;
     }
@@ -45,8 +34,8 @@
       padding:6px 0
       .evaluate-center-pic-item{
         float:left;
-        width:50px;
-        height:50px;
+        width:80px;
+        height:80px;
         background-image:url(../../common/image/goods-detail/img36.png);
         background-position:center;
         background-size:cover;
