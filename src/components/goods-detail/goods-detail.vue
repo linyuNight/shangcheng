@@ -70,7 +70,7 @@
               <div class="goodsdetail-main-video-contain-top-triangle"></div>
             </div>
             <!-- <video class="goodsdetail-main-video" src="~common/image/goods-detail/fff.mp4" poster="~common/image/goods-detail/sss.png"></video> -->
-            <video class="goodsdetail-main-video" controls poster="static/sss.png" webkit-playsinline>
+            <video class="goodsdetail-main-video" controls poster="static/sss.png" webkit-playsinline playsinline="true">
               <source src="static/fff.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video> 
